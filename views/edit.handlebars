@@ -1,6 +1,6 @@
 <div class="container mt-3">
   <div class="row w-75 mx-auto">
-    <form class="modal-body" method="post" action="/restaurants/{{restaurant._id}}/edit">
+    <form class="modal-body" method="post" action="/restaurants/{{restaurant._id}}/?_method=PUT">
       <div>
         <label class="form-label" for="">餐廳名稱 :</label>
         <input type="text" class="form-control" name="name" id="name" required value="{{restaurant.name}}">
